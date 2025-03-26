@@ -43,11 +43,11 @@ bookIsbnColumn.innerText=isbn.value;
 	   isbn.value = "";
 
 let delBtn=document.createElement("button")
-row.appendChild(delBtn);
 delBtn.className="delete";
 delBtn.innerText="X";
-
-
+let delCell = document.createElement("td");
+delCell.appendChild(delBtn);
+row.appendChild(delCell);
 delBtn.addEventListener("click",(event)=>{
     if(delBtn.className=="delete"){
 event.target.parentElement.remove()
