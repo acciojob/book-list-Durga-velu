@@ -9,7 +9,7 @@ document.querySelector("#submit").addEventListener("click",(event)=>{
 
 
 
-    let tbody=document.querySelector("#book-List");
+    let tbody=document.querySelector("#book-list");
 
     if(title.value=="" && author.value=="" && isbn.value==""){
         alert("Please Enter the book details")
