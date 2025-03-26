@@ -3,6 +3,7 @@
 let title=document.querySelector("#title")
 let author=document.querySelector("#author")
 let isbn=document.querySelector("#isbn")
+
 let input=document.getElementsByTagName("input")
 document.querySelector("#submit").addEventListener("click",(event)=>{
     event.preventDefault();
@@ -41,10 +42,7 @@ row.appendChild(bookIsbnColumn);
 bookIsbnColumn.innerText=isbn.value;
 	   isbn.value = "";
 
-
-
 let delBtn=document.createElement("button")
-
 row.appendChild(delBtn);
 delBtn.className="delete";
 delBtn.innerText="X";
