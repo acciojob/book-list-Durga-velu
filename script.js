@@ -6,7 +6,9 @@ let isbn=document.querySelector("#isbn")
 let input=document.getElementsByTagName("input")
 document.querySelector("#submit").addEventListener("click",(event)=>{
     event.preventDefault();
-  
+  title.value = "";
+author.value = "";
+isbn.value = "";
     let tbody=document.querySelector("#book-List");
 
     if(title.value=="" && author.value=="" && isbn.value==""){
