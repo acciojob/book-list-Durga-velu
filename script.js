@@ -7,9 +7,7 @@ let input=document.getElementsByTagName("input")
 document.querySelector("#submit").addEventListener("click",(event)=>{
     event.preventDefault();
 
-
-
-    let tbody=document.querySelector("#book-list");
+   let tbody=document.querySelector("#book-list");
 
     if(title.value=="" && author.value=="" && isbn.value==""){
         alert("Please Enter the book details")
@@ -54,7 +52,7 @@ delBtn.innerText="X";
 
 delBtn.addEventListener("click",(event)=>{
     if(delBtn.className=="delete"){
-event.target.parentElement.parentElement.remove()
+event.target.parentElement.remove()
     }
 })
 
