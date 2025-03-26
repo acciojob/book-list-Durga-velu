@@ -1,13 +1,12 @@
-//your JS code here. If required.
-
 
 
 let title=document.querySelector("#title")
 let author=document.querySelector("#author")
 let isbn=document.querySelector("#isbn")
+let input=document.getElementsByTagName("input")
 document.querySelector("#submit").addEventListener("click",(event)=>{
     event.preventDefault();
-
+  
     let tbody=document.querySelector(".add");
 
     if(title.value=="" && author.value=="" && isbn.value==""){
@@ -41,6 +40,8 @@ let bookIsbnColumn=document.createElement("td")
 row.appendChild(bookIsbnColumn);
 bookIsbnColumn.innerText=isbn.value;
 
+
+
 let delBtn=document.createElement("button")
 
 row.appendChild(delBtn);
@@ -48,12 +49,36 @@ delBtn.className="delete";
 delBtn.innerText="X";
 
 
-    for(let i=0;i<delBtn.length;i++){
-      delBtn[i].addEventListener("click",(event)=>{
-   event.target.parentElement.parentElement.remove()  
-})
+delBtn.addEventListener("click",(event)=>{
+    if(delBtn.className=="delete"){
+event.target.parentElement.parentElement.remove()
     }
+})
 
    }
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
