@@ -1,1 +1,89 @@
 /*  your css code here. If applicable */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+h1{
+   
+    text-align: center;
+}
+ span{
+color:rgb(74, 185, 228);
+}
+
+
+.form-group{
+    margin: 10px 150px;
+}
+input{
+    width:100%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    outline: none;
+    border:1px solid rgb(199, 198, 198);
+    border-radius: 5px;
+}
+
+
+#submit{
+    margin: 10px 0;
+    background-color: blue;
+    color: white;
+    border:none;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+tr{
+border-bottom: 1px solid rgb(199, 198, 198);
+}
+tr.border{ 
+   border-bottom: 2px solid black;
+}
+th{
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    padding: 5px 5px;
+}
+
+
+td{
+    padding: 5px 5px;
+    font-size: 14px;
+    color:black;
+   
+}
+.newRow{
+    background-color:rgb(221, 221, 221) ;
+}
+.delete{
+    background-color: red;
+    border: none;
+    padding: 3px 4px;
+    margin:6px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
