@@ -50,7 +50,7 @@ delCell.appendChild(delBtn);
 row.appendChild(delCell);
 delBtn.addEventListener("click",(event)=>{
     if(delBtn.className=="delete"){
-event.target.parentElement.remove()
+event.target.parentElement.parentElement.remove();
     }
 })
 
