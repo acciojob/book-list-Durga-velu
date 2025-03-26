@@ -7,7 +7,7 @@ let input=document.getElementsByTagName("input")
 document.querySelector("#submit").addEventListener("click",(event)=>{
     event.preventDefault();
   
-    let tbody=document.querySelector(".add");
+    let tbody=document.querySelector("#book-List");
 
     if(title.value=="" && author.value=="" && isbn.value==""){
         alert("Please Enter the book details")
